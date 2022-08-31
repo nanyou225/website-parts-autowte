@@ -17,7 +17,7 @@ body{
 export const Container = styled.div`
   display: grid;
   height: 100vh;
-  grid-template-rows: 0.2fr 0.1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.14fr 0.07fr 0.5fr 0.5fr 0.15fr;
   grid-template-areas:
     "nav nav nav nav"
     "sidebar sidebar sidebar sidebar"
@@ -29,7 +29,7 @@ export const Container = styled.div`
   transition: all 0.25s ease-in-out;
   @media (max-width: 550px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.3fr 2.2fr 1.2fr 0.5fr;
+    grid-template-rows: 0.4fr 0.2fr 2.2fr 1.2fr 0.5fr;
     grid-template-areas:
       "nav"
       "sidebar"
@@ -37,7 +37,7 @@ export const Container = styled.div`
       "content"
       "footer";
   }
-  /* color: white; */
+  color: white;
 `;
 
 export default GlobalStyle;
