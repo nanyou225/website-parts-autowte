@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const NavBar = styled.nav`
+export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.colors.NavBar};
   grid-area: nav;
   padding: 0.25rem;
 
   header {
     width: 100%;
-    height: 80px;
+    height: 70px;
   }
 
   header .navbar {

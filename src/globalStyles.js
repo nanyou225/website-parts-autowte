@@ -40,4 +40,23 @@ export const Container = styled.div`
   color: white;
 `;
 
+export const Button = styled.button`
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: azure;
+  color: aliceblue;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #ffff;
+    background-color: bisque;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+`;
+
 export default GlobalStyle;
