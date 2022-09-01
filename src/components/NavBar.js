@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import SearchBox from "./SearchBox";
 import { NavSearch } from "./NavBar.elements";
 
 const NavBar = ({ onSearchChange }) => {
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
   return (
     <header>
@@ -21,7 +20,7 @@ const NavBar = ({ onSearchChange }) => {
             placeholder="Rechercher un produit, une réference ou une marque"
           />
         </NavSearch>
-        <ul className="nav-menu">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/contact">Contact & FaQ</Link>
           </li>
@@ -32,8 +31,12 @@ const NavBar = ({ onSearchChange }) => {
             <Link to="/panier">Panier</Link>
           </li>
         </ul>
-        <div className="hamburger" style={{ color: "#fff" }}>
-          <FaBars />
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={20} style={{ color: "#fff" }} />
+          ) : (
+            <FaBars size={20} style={{ color: "#fff" }} />
+          )}
         </div>
       </nav>
     </header>

@@ -7,7 +7,7 @@ export const NavBar = styled.nav`
 
   header {
     width: 100%;
-    height: 100px;
+    height: 80px;
   }
 
   header .navbar {
@@ -55,9 +55,15 @@ export const NavBar = styled.nav`
 
   .nav-item a {
     color: #fff;
+
+    &:hover {
+      border-bottom: 2px solid #fb3d28;
+      width: auto;
+      padding-bottom: 5px;
+    }
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 550px) {
     .hamburger {
       display: block;
     }
@@ -70,13 +76,15 @@ export const NavBar = styled.nav`
       width: 100%;
       height: 100%;
       align-items: center;
-      transition: 0.4s;
-      /* transition: all 0.25s ease-in-out; */
+      /* transition: 0.4s; */
+      transition: all 0.25s ease-in-out;
     }
-
+    .nav-menu.active {
+      left: 0;
+    }
     .nav-item {
       margin: 1.5rem 0;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -86,6 +94,8 @@ export const NavSearch = styled.nav`
   margin-right: 3rem;
 
   .search-box {
+    display: flex;
+    margin: auto 0;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -96,12 +106,16 @@ export const NavSearch = styled.nav`
     margin: inherit;
   }
 
-  @media screen and (max-width: 960px) {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    transition: 0.4s;
+  @media screen and (max-width: 550px) {
+    .search-box {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      transition: all 0.25s ease-in-out;
+    }
+    .search-box input {
+      width: 90%;
+    }
   }
 `;

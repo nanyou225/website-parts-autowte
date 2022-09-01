@@ -1,18 +1,15 @@
-// import React from "react";
-// import Connexion from "./pages/Connexion";
-// import Contact from "./pages/Contact";
-// import Home from "./pages/Home";
-// import Panier from "./pages/Panier";
+
+import React from "react";
 import { ThemeProvider } from "styled-components";
-import { ContentA } from "./components/ContentA.elements";
-import { ContentB } from "./components/ContentB.elements";
-import { ContentBox } from "./components/ContentBox.elements";
-import { ContentC } from "./components/ContentC.elements";
-import { Footer } from "./components/Footer.elements";
-import { Main } from "./components/Main.elements";
+import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar.elements";
 import { SideBar } from "./components/SideBar.elements";
-import { Routes, Route } from "react-router-dom";
+import { Main } from "./components/Main.elements";
+import { ContentBox } from "./components/ContentBox.elements";
+import { ContentA } from "./components/ContentA.elements";
+import { ContentB } from "./components/ContentB.elements";
+import { ContentC } from "./components/ContentC.elements";
+import { Footer } from "./components/Footer.elements";
 import GlobalStyle, { Container } from "./globalStyles";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -86,7 +83,7 @@ function App() {
           <ContentB>ContentB</ContentB>
           <ContentC>ContentC</ContentC>
         </ContentBox>
-        <Footer>Footer</Footer>
+        <Footer />
       </Container>
     </ThemeProvider>
   );
@@ -94,9 +91,3 @@ function App() {
 
 export default App;
 
-/*<Routes>
-      <Route path="/" element={<Home />} exact />
-      <Route path="/contact" element={<Contact />} exact />
-      <Route path="/connexion" element={<Connexion />} exact />
-      <Route path="/panier" element={<Panier />} exact />
-    </Routes>*/
