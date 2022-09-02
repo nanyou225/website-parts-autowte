@@ -1,13 +1,11 @@
 import React from "react";
-import { NavFooter } from "./Footer.elements";
+import { NFooter } from "./Footer.elements";
 
 const Footer = () => {
   return (
-    <NavFooter>
-      <footer>
-        Copyright &copy; - 2022 allo-piece-auto - Tous droits réservés
-      </footer>
-    </NavFooter>
+    <NFooter>
+      <span> Copyright &copy; - 2022 allo-piece-auto - Tous droits réservés</span>
+    </NFooter>
   );
 };
 
