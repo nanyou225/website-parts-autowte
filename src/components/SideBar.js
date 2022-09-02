@@ -1,8 +1,11 @@
-import React from "react";
-import "./SideBar.elements"
+
+import React from 'react'
+import {NavSideBar} from "./SideBar.elements"
 
 const SideBar = () => {
-  return <div></div>;
-};
+  return (
+    <NavSideBar>SideBar</NavSideBar>
+  )
+}
 
-export default SideBar;
+export default SideBar

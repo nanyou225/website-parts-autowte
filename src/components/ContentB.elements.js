@@ -1,4 +1,6 @@
 import styled from "styled-components";
-import { ContentA } from "./ContentA.elements";
+import { NContentA } from "./ContentA.elements";
 
-export const ContentB = styled(ContentA)``;
+export const NContentB = styled(NContentA)`
+
+`;

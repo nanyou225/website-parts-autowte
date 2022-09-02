@@ -24,7 +24,7 @@ const NavBar = ({ onSearchChange }) => {
           </NavSearch>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/contact">Contact & FaQ</Link>
+              <Link to="/contact">Contact & FAQ</Link>
             </li>
             <li className="nav-item">
               <Link to="/connexion">Connexion</Link>

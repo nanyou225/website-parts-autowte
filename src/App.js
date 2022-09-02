@@ -1,23 +1,15 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./globalStyles";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import { SideBar } from "./components/SideBar.elements";
-import { Main } from "./components/Main.elements";
-import { ContentBox } from "./components/ContentBox.elements";
-import { ContentA } from "./components/ContentA.elements";
-import { ContentB } from "./components/ContentB.elements";
-import { ContentC } from "./components/ContentC.elements";
-import GlobalStyle, { Container } from "./globalStyles";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
-import ContactPage from "./pages/ContactPage";
-import ConnexionPage from "./pages/ConnexionPage";
-import PanierPage from "./pages/PanierPage";
+import Contact from "./pages/Contact";
+import Connexion from "./pages/Connexion";
+import Panier from "./pages/Panier";
+import Home from "./pages/Home";
 
 const theme = {
   colors: {
-    GlobalStyle: "black",
+    GlobalStyle: "#fff",
     NavBar: "#29323c",
     body: "#E8E8E8",
     Catalogue: "#2980b9",
@@ -66,24 +58,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Container>
-        <NavBar>
-          <Routes>
-            <Route path="/" element={<HomePage />} exact />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/connexion" element={<ConnexionPage />} />
-            <Route path="/panier" element={<PanierPage />} />
-          </Routes>
-        </NavBar>
-        <SideBar>SideBar</SideBar>
-        <Main>Main</Main>
-        <ContentBox>
-          <ContentA>ContentA</ContentA>
-          <ContentB>ContentB</ContentB>
-          <ContentC>ContentC</ContentC>
-        </ContentBox>
-        <Footer />
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/panier" element={<Panier />} />
+      </Routes>
     </ThemeProvider>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
-import { NavF } from "./Footer.elements";
+import { NavFooter } from "./Footer.elements";
 
 const Footer = () => {
   return (
-    <NavF>
+    <NavFooter>
       <footer>
         Copyright &copy; - 2022 allo-piece-auto - Tous droits réservés
       </footer>
-    </NavF>
+    </NavFooter>
   );
 };
 
