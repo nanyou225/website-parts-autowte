@@ -1,0 +1,141 @@
+[
+    {
+        "id": 1,
+        "title": "Huile Moteur",
+        "image": "/url_",
+        "category_list": [
+            {
+                "Chaînes-neiges et Equipements Roue": [
+                    {
+                        " Boulon de roue": [
+                            {
+                                "title": "Capteur de roue, syst. de contrôle de pression des pneus",
+                                "description": "Kit de distribution + Pompe à eau",
+                                "price": 139.90,
+                                "discountPercentage": 12.96,
+                                "rating": 4.69,
+                                "stock": 94,
+                                "brand": "SKF",
+                                "reference": "VKMC 93616",
+                                "category": "Pièces moteur",
+                                "image": "/url",
+                                "images": "/url"
+                            }
+                        ],
+                        "Pneumatiques": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Pneus et Equipements Roue",
+        "image": "/url_",
+        "category_list": [
+            {
+                "Chaînes-neiges et Equipements Roue": [
+                    {
+                        " Boulon de roue": [
+                            {
+                                "title": "Courroies et Distribution",
+                                "description": "Kit de distribution + Pompe à eau",
+                                "price": 129.5,
+                                "discountPercentage": 12.96,
+                                "rating": 4.69,
+                                "stock": 94,
+                                "brand": "GATES",
+                                "reference": "KP4114",
+                                "category": "Pièces moteur",
+                                "image": "/url",
+                                "images": "/url"
+                            },
+                            {
+                                "title": "Capteur de roue, syst. de contrôle de pression des pneus",
+                                "description": "Kit de distribution + Pompe à eau",
+                                "price": 139.90,
+                                "discountPercentage": 12.96,
+                                "rating": 4.69,
+                                "stock": 94,
+                                "brand": "SKF",
+                                "reference": "VKMC 93616",
+                                "category": "Pièces moteur",
+                                "image": "/url",
+                                "images": "/url"
+                            }
+                        ],
+                        "Pneumatiques": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Outillage",
+        "image": "/url_",
+        "category_list": [
+            {
+                "Outillage divers & coffrets": [
+                    "Filtre à huile",
+                    "Filtre à carburant",
+                    "Filtre à carburant",
+                    "Filtre à air",
+                    "Filtre d'habitacle",
+                    "Filtre hydraulique, direction"
+                ],
+                "Eclairage": [
+                    "Huile moteur",
+                    "Joint de bouchon vidange",
+                    "Bouchon de vidange",
+                    "Joint, capteur du niveau d'huile",
+                    "Huile pour hydraulique central"
+                ],
+                "Mesure": [
+                    "Lot vidange",
+                    "Clé à filtres",
+                    "Clé pour filtre à huile",
+                    "Pompe de transfert carburant",
+                    "Clé de vidange"
+                ],
+                "Kit de toournevis": [
+                    "Joint d'étanchéité, boîtier de filtre à huile",
+                    "Couvercle, boîtier du filtre d'huile",
+                    "Kit de filtres hydrauliques, boîte automatique",
+                    "Boîtier, filtre de carburant",
+                    "Capteur du niveau d'eau, filtre à carburant"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Entretien et Nettoyage",
+        "image": "/url_",
+        "category_list": [
+            {
+                "Additifs et Traitements spécifiques": [
+                    "Kit d'embrayage",
+                    "Kit d'embrayage + Volant moteur",
+                    "Volant moteur",
+                    "Emetteur d'embrayage",
+                    "Huile boîte de vitesses"
+                ],
+                "Nettoyage et Protection Extérieure": [
+                    "Bague d'étanchéité, boîte de vitesse manuel",
+                    "Câble de boîte de vitesse manuelle",
+                    "Kit de vidange, boîte automatique",
+                    "Support de boîte de vitesse",
+                    "Kit de réparation, levier de changement de vitesse"
+                ],
+                "Réparation et Maintenance": [
+                    "Câble d'embrayage",
+                    "Contacteur de position de pédale d'embrayage",
+                    "Douille de guidage, embrayage",
+                    "Fourchette de débrayage, embrayage",
+                    "Coffret de réparation double embrayage à sec"
+                ]
+            }
+        ]
+    }
+]
