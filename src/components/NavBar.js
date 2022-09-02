@@ -8,6 +8,7 @@ const NavBar = ({ onSearchChange }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
+<<<<<<< HEAD
     <header>
       <nav className="navbar">
         <div className="logo">
@@ -40,6 +41,42 @@ const NavBar = ({ onSearchChange }) => {
         </div>
       </nav>
     </header>
+=======
+    <Nav>
+      <header>
+        <nav className="navbar">
+          <div className="logo">
+            <Link to="/">Allo-Auto</Link>
+          </div>
+          <NavSearch onClick={handleClick} click={click}>
+            <SearchBox
+              className="search-box"
+              onChangeHandler={onSearchChange}
+              placeholder="Rechercher un produit, une réference ou une marque"
+            />
+          </NavSearch>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/contact">Contact & FAQ</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/connexion">Connexion</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/panier">Panier</Link>
+            </li>
+          </ul>
+          <div className="hamburger" onClick={handleClick}>
+            {click ? (
+              <FaTimes size={20} style={{ color: "#fff" }} />
+            ) : (
+              <FaBars size={20} style={{ color: "#fff" }} />
+            )}
+          </div>
+        </nav>
+      </header>
+    </Nav>
+>>>>>>> 9b032d1 (F03 feat Destructuring and Routing Components)
   );
 };
 

@@ -1,7 +1,9 @@
 
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./globalStyles";
 import { Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import { NavBar } from "./components/NavBar.elements";
 import { SideBar } from "./components/SideBar.elements";
 import { Main } from "./components/Main.elements";
@@ -15,10 +17,16 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Connexion from "./pages/Connexion";
 import Panier from "./pages/Panier";
+=======
+import Contact from "./pages/Contact";
+import Connexion from "./pages/Connexion";
+import Panier from "./pages/Panier";
+import Home from "./pages/Home";
+>>>>>>> 9b032d1 (F03 feat Destructuring and Routing Components)
 
 const theme = {
   colors: {
-    GlobalStyle: "black",
+    GlobalStyle: "#fff",
     NavBar: "#29323c",
     body: "#E8E8E8",
     Catalogue: "#2980b9",
@@ -67,6 +75,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+<<<<<<< HEAD
       <Container>
         <NavBar>
           <Routes>
@@ -85,6 +94,14 @@ function App() {
         </ContentBox>
         <Footer />
       </Container>
+=======
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/panier" element={<Panier />} />
+      </Routes>
+>>>>>>> 9b032d1 (F03 feat Destructuring and Routing Components)
     </ThemeProvider>
   );
 }
