@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { NFooter } from "./Footer.elements";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <NFooter>
+      <span> Copyright &copy; - 2022 allo-piece-auto - Tous droits réservés</span>
+    </NFooter>
+  );
+};
 
-export default Footer
+export default Footer;

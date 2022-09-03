@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { NContentA } from "./ContentA.elements";
 
 const ContentA = () => {
-  return (
-    <div>ContentA</div>
-  )
-}
+  return <NContentA>ContentA</NContentA>;
+};
 
-export default ContentA
+export default ContentA;

@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import { Container } from "../globalStyles";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <Container>
+        <NavBar />
+        <h1>Contact</h1>
+        <Footer />
+      </Container>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

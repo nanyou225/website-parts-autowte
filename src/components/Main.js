@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavMain } from './Main.elements'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <NavMain>Main</NavMain>
   )
 }
 

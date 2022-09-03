@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import { Container } from "../globalStyles";
 
 const Panier = () => {
   return (
-    <div>Panier</div>
-  )
-}
+    <div>
+      <Container>
+        <NavBar />
+        <h1>Panier</h1>
+        <Footer />
+      </Container>
+    </div>
+  );
+};
 
-export default Panier
+export default Panier;
