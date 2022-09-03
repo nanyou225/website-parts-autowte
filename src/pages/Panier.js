@@ -1,5 +1,4 @@
 import React from 'react'
-import "./PanierStyles.css"
 
 const Panier = () => {
   return (
